@@ -1,0 +1,59 @@
+// Cards
+.card {
+  box-shadow: $z-depth-1;
+  border: 0;
+  font-weight: 400;
+  border-radius: 1.5rem;
+  &[class*="border"] {
+    border: 1px solid $grey-base;
+    box-shadow: none;
+  }
+  a {
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  .card-body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 400;
+    }
+    .card-title {
+      a {
+        transition: $md-card-link-transition;
+        &:hover {
+          transition: $md-card-link-transition;
+        }
+      }
+    }
+    .card-text {
+      color: $md-card-text-color;
+      font-size: $md-card-font-size;
+      font-weight: 400;
+    }
+    &.contact {
+      background: $info-color;
+      color: #ffffff;
+      border-radius: 0 1.5rem 1.5rem 0
+    }
+  }
+  .card-body-cascade {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .view-cascade {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    -webkit-border-radius: .25rem;
+    border-radius: 1.5rem;
+  }
+  .card-img-top {
+    border-radius: 1.5rem 1.5rem 0 0;
+    &.porta {
+      height: 230px;
+    }
+  }
+}

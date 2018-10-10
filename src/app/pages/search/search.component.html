@@ -1,0 +1,33 @@
+<section class="my-5 sec-frame">
+  <div class="row">
+    <div *ngFor="let product of productsService.filteredProducts" class="col-xs-12 col-md-4">
+      <!-- Card Regular -->
+      <div class="card card-cascade animated fadeInDown slow">
+
+        <!-- Card image -->
+        <div class="view view-cascade overlay">
+          <img class="card-img-top porta" src="assets/img/products/{{product.img}}.png" alt="Card image cap">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body card-body-cascade text-center">
+
+          <!-- Title -->
+          <h4 class="card-title cyan-text"><strong>{{product.name}}</strong></h4>
+          <!-- Subtitle -->
+          <h6 class="font-weight-bold  py-2">{{product.category}}</h6>
+          <!-- Text -->
+          <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+          </p> -->
+          <a [routerLink]="['/producto', product.id]" class="btn cyan text-white">ver mas</a>
+        </div>
+
+      </div>
+      <!-- Card Regular -->
+    </div>
+
+  </div>
+</section>

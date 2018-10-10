@@ -1,0 +1,124 @@
+<section class="mt-5">
+
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-md-8">
+      <!-- Card -->
+      <div *ngFor="let person of dataPageService.team" class="card card-cascade wider reverse animated slow fadeIn">
+
+        <!-- Card image -->
+        <div class="view view-cascade overlay">
+          <img class="card-img-top" [src]="person.url" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body card-body-cascade text-center">
+
+          <!-- Title -->
+          <h4 class="card-title cyan-text"><strong>{{person.name}}</strong></h4>
+          <!-- Subtitle -->
+          <h6 class="font-weight-bold py-2">{{person.occupation}}</h6>
+          <!-- Text -->
+          <p class="">{{person.description}}</p>
+
+          <!-- Linkedin -->
+          <a href="https://www.facebook.com/rinconespablo/" target="_blank" class="px-2 fa-lg btn-circle blue darken-4"> <i class="fab fa-facebook-f"></i></a>
+          <!-- Twitter -->
+          <a href="https://www.instagram.com/rinconespablo/?hl=es-la" target="_blank" class="px-2 fa-lg btn-circle orange darken-4"> <i class="fab fa-instagram"></i></a>
+          <!-- Dribbble -->
+          <a href="https://fernando-herrera.com/logros/#/pablorincones95@gmail.com" target="_blank" class="px-2 fa-lg btn-circle green darken-2 "><i class="fas fa-trophy"></i></a>
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+  </div>
+
+</section>
+
+
+<section class="text-center mt-3">
+  <div class="row">
+    <div class="col">
+      <!-- Section heading -->
+      <h2 class="h1-responsive font-weight-bold my-5">¿Por qué es tan genial?
+      </h2>
+    </div>
+  </div>
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-4 animated slow slideInLeft">
+      <i class="fas fa-brain fa-3x cyan-text"></i>
+      <h5 class="font-weight-bold my-4">Analítico</h5>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-4  animated slow slideInDown">
+      <i class="fas fa-palette fa-3x orange-text"></i>
+      <h5 class="font-weight-bold my-4">Creativo</h5>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-4 animated slow slideInRight">
+      <i class="fas fa-headset fa-3x blue-text"></i>
+      <h5 class="font-weight-bold my-4">Apoyo</h5>
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+
+
+<section class="my-5 sec-frame ">
+  <h2 class="h1-responsive font-weight-bold my-5 text-center">Frameworks y tecnologias
+  </h2>
+  <div class="row">
+    <div class="col-xs12 col-md-6 framework animated slow slideInLeft">
+
+      <ul class="list-framework">
+        <li><i class="fab fa-angular"></i> Angular</li>
+        <li><i class="fab fa-node-js"></i> NodeJS</li>
+        <li><i class="fas fa-fire"></i> Firebase</li>
+        <li><i class="fab fa-envira"></i> MongoDB</li>
+      </ul>
+
+      <ul class="list-framework">
+        <li><i class="fab fa-laravel"></i> Laravel</li>
+        <li><i class="fab fa-wordpress"></i> Wordpress</li>
+        <li><i class="fas fa-database"></i> MySQL</li>
+      </ul>
+
+    </div>
+    <div class="col-xs-12 col-md-6 animated slow slideInRight">
+      <p class="font-weight-bold">HTML</p>
+      <div class="progress" style="height: 20px">
+        <div class="progress-bar #e65100 orange darken-4 " role="progressbar" style="width: 95%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">95%</div>
+      </div>
+      <br>
+      <p class="font-weight-bold">CSS</p>
+      <div class="progress" style="height:20px">
+        <div class="progress-bar  blue darken-4" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+      </div>
+      <br>
+      <p class="font-weight-bold">JAVASCRIPT</p>
+      <div class="progress" style="height: 20px;">
+        <div class="progress-bar  yellow darken-1" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">80%</div>
+      </div>
+      <br>
+      <p class="font-weight-bold">PHP</p>
+      <div class="progress" style="height: 20px">
+        <div class="progress-bar blue accent-4" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+      </div>
+    </div>
+  </div>
+</section>
